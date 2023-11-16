@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+    flex: 1;
+}
+.card-1{
+    background-image: url(/img/alberta-2297204_640.jpg);
+}
+.card-2{
+    background-image: url(/img/mountains-1587287_640.jpg);
+}
+.card-3{
+    background-image: url(/img/river-219972_640.jpg);
+}
+.card-4{
+    background-image: url(/img/road-1072821_640.jpg);
+}
+.card-5{
+    background-image: url(/img/sunset-2080072_640.jpg);
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5{
+    background-size: cover;
+    height: 40vh;
+    width: 0;
+    margin: .5em;
+    border-radius: 2em;
+    transition: all 1s;
+    flex: 1;
+    cursor: pointer;
+    background-position: center;
+}
+.expand{
+    flex-grow: 5;
+}
