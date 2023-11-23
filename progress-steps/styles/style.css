@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: #F6F7FB;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    flex-direction: column;
+    width: 350px;
+    row-gap: 2em;
+}
+.numbers,
+.container,
+body,
+.buttons,
+.elements,
+.line{
+    display: flex;
+}
+.numbers{
+    justify-content: space-between;
+    position: relative; 
+}
+.buttons{
+    justify-content: center;
+    column-gap: 1em;
+}
+.number{
+    color: grey;
+    background: white;
+    height: 25px;
+    width: 25px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: 3px solid lightgrey;
+}
+.active{
+    border-color:#3498DB;
+    transition: linear 200ms;
+}
+.numbers::before{
+    content: "";
+    width: var(--current-w);
+    position: absolute;
+    border-top: 3px solid #3498DB;
+    top: calc(50% - 1.5px);
+    z-index: -1;
+    transition: linear 200ms; 
+}
+.numbers::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-top: 3px solid lightgrey;
+    top: calc(50% - 1.5px);
+    z-index: -2;
+}
+.buttons button{
+    width: 10em;
+    padding: .74em;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.buttons button:enabled{
+    background: #3498DB;
+    color: white;
+}
+:root{
+    --current-w: 0;
+}
