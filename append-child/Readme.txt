@@ -1,0 +1,1 @@
+How to use "appendChild" from JavaScript.

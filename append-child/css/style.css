@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-content: center;
+}
+button{
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.container{
+    background-color: antiquewhite;
+    height: 30vh;
+    display: grid;
+    place-content: center;
+    padding: 2em;
+    border-radius: 2em;
+    gap: 1em;
+}
+.divs-container{
+    background-color: rgb(246, 213, 170);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5em;
+    border-radius: .5em;
+}
+.first-div-parent,
+.second-div-parent{
+    background-color: antiquewhite;
+    padding: .5em;
+    border-radius: .5em;
+}
+.first-div-child,
+.second-div-child{
+    font-weight: 700;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: .5em;
+    display: grid;
+    place-content: center;
+}
